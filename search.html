@@ -13,22 +13,49 @@
         </a>
     </div>
     <div class="tacoLocation">
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
-        <p>Results</p>
+        <a href = "#", class = "openBTN">Taco Bell</a>
+        <p>6200 Baltimore National Pike, Catonsville, MD 21228</p>
+        <a href = "#", class = "openBTN">Taco Bell</a>
+        <p>2300 W Patapsco Ave, Baltimore, MD 21230</p>
+        <a href = "#", class = "openBTN">Taco Bell</a>
+        <p>6664 Security Blvd, Baltimore, MD 21207</p>
+        <a href = "#", class = "openBTN">Taco Bell</a>
+        <p>5184 Raynor Ave, Linthicum Heights, MD 21090</p>
+        <a href = "#", class = "openBTN">Taco Bell</a>
+        <p>6281 Washington Blvd, Elkridge, MD 21075</p> 
     </div>
     <div class="nacho">
         <img src="nacho_logo_search.svg" alt="Nacho illustration">
         <div class="inner-rect"></div>
     </div>
+    <div class = "zillowResults">
+        <a href="#", class="menuClose">X</a>
+        <div class="zilResText">
+        <a href ="https://www.zillow.com/apartments/catonsville-md/melvin-park/5Xmmb2/", class="zillowLink">Melvin Park</a>
+        <p>351 Suter Rd, Catonsville, MD 21228</p>
+        <a href ="https://www.zillow.com/apartments/catonsville-md/montrose-manor/BnrXtQ/", class="zillowLink">Montrose Manor</a>
+        <p>28l Montrose Manor Ct, Catonsville, MD 21228</p>
+        <a href ="https://www.zillow.com/apartments/baltimore-md/colony-hill-apartments-and-townhomes/5Xxcyx/", class="zillowLink">Colony Hill Apartments & Townhomes</a>
+        <p>24 Colony Hill Ct, Baltimore, MD 21227</p>
+        <a href ="https://www.zillow.com/apartments/baltimore-md/the-grove/BpmRYn/", class="zillowLink">The Grove</a>
+        <p>5705b Selford Rd, Baltimore, MD 21227</p>
+        <a href ="https://www.zillow.com/apartments/catonsville-md/caton-house/5XqS7g/", class="zillowLink">Caton House</a>
+        <p>417 Wheaton Pl, Catonsville, MD 21228</p></div>
+    </div>
+
+    <script>
+        const zillowRes = document.querySelector('.zillowResults');
+        const menuBtn = document.querySelector('.openBTN');
+        const closeBtn = document.querySelector('.menuClose')
+
+        menuBtn.addEventListener('click', () => {
+            zillowRes.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            zillowRes.classList.remove('open')
+        })
+
+    </script>
 </body>
 </html>

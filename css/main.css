@@ -1,9 +1,12 @@
-
+*{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Istok Web';
+}
 
 body {
     background-color: #DC4B08;
     margin: 0;
-    font-family: 'Istok Web';
 }
 
 .wrap {
@@ -15,10 +18,11 @@ body {
     float: right;
 
     a {
-        color: #DC4B08;
+        color: #c84204;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.5rem;
+        padding: 2rem;
 
         &:hover{
             color: black;
@@ -35,7 +39,7 @@ main {
         display: block;
         margin: 0;
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         -ms-transform: translate(-50%, -45%);
         transform: translate(-50%, -45%);
@@ -111,4 +115,29 @@ main {
         border-color: #F9EC7A;
         margin: 0 auto;
     }
+}
+
+.zillowResults{
+    background: #F9EC7A;
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    width: 40%;
+    padding: 2em;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    .menuClose{
+        text-align: left;
+    }
+    .zilResText{
+        text-align: right;
+    }
+}
+
+.open{
+    transform: translateY(0%);
 }
